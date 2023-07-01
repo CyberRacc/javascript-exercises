@@ -1,17 +1,15 @@
-const reverseString = function() {
-    // I think I need to convert the word into an array.
-    // Create a new string from the array in reverse order somehow, review notes.
-    // Needs to use string methods .split() and .join()
+const reverseString = function(string) {
 
-    splitString = String.spit();
+    // Created an array that contains each character of a string that was split.
+    const splitArray = string.split("");
 
-    const stringArray = [splitString];
+    // Created an array with the above content in reverse order.
+    const reversedArray = splitArray.reverse("");
 
-
-
-    const reversedArray = stringArray.reverse();
-
-    let reversedString = reversedArray.join();
+    // This new object contains a string created by joining the reversed array.
+    // It's important to note that the .join array method returns a string.
+    // The two methods above (reverse, and split) return arrays.
+    let reversedString = reversedArray.join("");
 
     return reversedString;
 
