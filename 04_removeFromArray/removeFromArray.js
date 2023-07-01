@@ -1,6 +1,16 @@
-const removeFromArray = function(array, remove) {
+const removeFromArray = function(array, ...args) {
 
-    array.splice(2, 1);
+    function toRemove(array, ...args) {
+
+        let arrayIndex = array.indexOf(...args);
+
+        array.splice(arrayIndex);
+
+        return array;
+     
+    }
+
+    array.filter(toRemove);
 
     return array;
 
