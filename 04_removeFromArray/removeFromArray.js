@@ -1,12 +1,8 @@
 const removeFromArray = function(array, ...args) {
 
-    function toRemove(array, ...args) {
+    function toRemove() {
 
-        let arrayIndex = array.indexOf(...args);
-
-        array.splice(arrayIndex);
-
-        return array;
+        array.includes(args);
      
     }
 
