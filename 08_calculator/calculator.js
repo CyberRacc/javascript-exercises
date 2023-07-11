@@ -10,14 +10,18 @@ const sum = function(array) { return array.reduce((total, currentValue) => total
 
 const multiply = function(...args) {
 
-  return args.reduce((total, currentValue) => total * currentValue, 0)};
+  return args.reduce((total, currentValue) => total * currentValue, 1)};
 
-const power = function() {
-	return Number(a) ^ Number(b);
+const power = function(a, b) {
+	return Number(a) ** Number(b);
 };
 
-const factorial = function() {
-	factorial(Number(a), Number(b));
+const factorial = function(a) {
+	let result = 1;
+  for (let i = 1; i <= a; i++) {
+    result *= i;
+  }
+  return result;
 };
 
 // Do not edit below this line
