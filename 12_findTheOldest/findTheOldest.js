@@ -1,11 +1,13 @@
 const findTheOldest = function(people) {
     return people.reduce((oldest, currentPerson) => {
-        return 
-    })
+        let currentPersonAge = currentPerson.yearOfDeath - currentPerson.yearOfBirth;
+        oldest = 
+        if (currentPersonAge > oldest) {
+            return oldest;
+        }
+    });
 };
 
-// Read notes on objects and reduce().
-// Need to actuall understand it not just copying AI guide.
 
 const multiply = function(...args) {
     return args.reduce((total, currentValue) => total * currentValue, 1)
